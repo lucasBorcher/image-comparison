@@ -12,14 +12,35 @@
       <div class="background2">
         <h1>Compare Images</h1>
         <div class="comparison">
-          <img src="Images/image-outline.svg" alt="image-logo" />
+          <img
+            src="Images/image-outline.svg"
+            class="imageimage"
+            alt="image-logo"
+          />
+          <img id="image1" class="image-upload" />
+          <img id="image2" class="image-upload" />
         </div>
         <div class="control">
-          <div class="button">Upload first image</div>
-          <div class="button">Compare</div>
-          <div class="button">Upload second image</div>
+          <div
+            class="button"
+            id="upload"
+            onclick="document.getElementById('file1').click();"
+          >
+            Upload image 1
+            <input type="file" id="file1" style="display: none" />
+          </div>
+          <div class="button" id="compare">Compare</div>
+          <div
+            class="button"
+            id="upload"
+            onclick="document.getElementById('file2').click();"
+          >
+            Upload image 2
+            <input type="file" id="file2" style="display: none" />
+          </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

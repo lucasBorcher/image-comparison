@@ -45,7 +45,7 @@ h1{
 }
 .comparison{
     display: flex;
-    width: 426.667px;
+    width: 427px;
     height: 240px;
     background-color: var(--Medium-Grey);
     border: 2px solid var(--Very-Dark-Blue);
@@ -53,28 +53,51 @@ h1{
     align-items: center;
     border-radius: 10px;
     }
-img{
+.imageimage{
+    display: flex;
+    
     width: 100px;
     height: auto;
 }
-
+.image-upload{
+    display: none;
+    width: inherit;
+    height: inherit;
+    border-radius: 10px;
+    
+}
 
 .control{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 2rem 0 0 0;
+    width: 426.667px;
+    text-align: center;
+    
 }
 
 .button{
-    margin: 0 1rem 0 1rem;
+    display: flex;
     background-color: var(--Orange);
-    padding: 10px;
     border-radius: 25px;
     cursor: pointer;
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    padding: 15px 0 0 0;
     
 }
+
+
 .button:hover{
     background-color: var(--White);
     color: var(--Orange);
+}
+#compare{
+    margin: 0 1.5rem 0 1.5rem;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    padding: 12px 0px 0px 0;
 }
